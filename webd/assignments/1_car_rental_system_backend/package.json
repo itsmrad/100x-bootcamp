@@ -1,0 +1,27 @@
+{
+	"name": "1_car_rental_system_backend",
+	"module": "src/server.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "bun --watch run src/server.ts",
+		"start": "bun run dist/server.js",
+		"build": "bun build src/server.ts --outdir dist --target bun"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/express": "^5.0.6"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@types/jsonwebtoken": "^9.0.10",
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"dotenv": "^17.2.3",
+		"express": "^5.2.1",
+		"jsonwebtoken": "^9.0.3",
+		"pg-promise": "^12.3.0"
+	}
+}

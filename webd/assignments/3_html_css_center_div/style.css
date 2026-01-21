@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 0;
+}
+
+.info-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+	font-size: large;
+	color: black;
+  position: absolute;
+  top:80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading-sign-up {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	font-weight: 500;
+	width: 100%;
+	height: 44px;
+	border-radius: 10px;
+	background-color: white;
+	padding: 10px 15px;
+}
+
+.google-logo {
+	width: 26px;
+	height: 26px;
+	margin-right: 80px;
+}
+
+.google-create-acc {
+	display: flex;
+	margin-right: 80px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 20%;
+}
+
+.sign-up-btn {
+	background-color: #a6a6ae;
+	color: white;
+}
+
+.info-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+	font-size: 15px;
+}
+input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	font-weight: 500;
+	width: 100%;
+	height: 44px;
+	border-radius: 10px;
+	background-color: white;
+	padding: 10px 15px;
+}
+
+a {
+	color: black;
+	font-weight: 450;
+	text-decoration: none;
+	position: relative;
+}
+
+a::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: black;
+	opacity: 0.5;
+	transition: opacity 0.2s ease;
+}
+
+a:hover:after {
+	opacity: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FBFBFB;;
+  width: 100%;
+}
+
+footer div {
+  padding: 24px 20px;
+  color: #898991;
+}
