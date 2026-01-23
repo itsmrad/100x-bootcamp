@@ -4,3 +4,20 @@
   box-sizing: border-box;
 }
 
+.main-div {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-div {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 50%;
+}
+
+.right-div {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+}
