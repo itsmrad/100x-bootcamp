@@ -286,3 +286,4 @@ Testing/
 
 # cph
 .cph/
+*.bin
