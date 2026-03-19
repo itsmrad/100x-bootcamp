@@ -5,15 +5,20 @@ int main() {
   int n;
   cin >> n;
   long long arr[n];
-  long long sum = 0;
   for (int i = 0; i < n; i++) {
-    int x;
+    long long x;
     cin >> x;
-    sum = sum + x;
-    arr[i] = sum;
+    if ( (i+1) % 2 == 0 ) { // checks if the indice is even
+        arr[i] = (i > 0 ? arr[i-1] : 0) + x;
+    } else {
+        arr[i] = (i > 0 ? arr[i-1] : 0);
+    }
+  }
+  for (int i = 0; i < n; i++) {
+    cout << arr[i] << endl;
   }
 
-  int q;
+  long long q;
   cin >> q;
   long long answer[q];
 
@@ -31,8 +36,8 @@ int main() {
     answer[i] = ans;
   }
 
-  for (int i = 0; i < q; i++) {
-    cout << answer[i] << endl;
-  }
+//   for (int i = 0; i < q; i++) {
+//     cout << answer[i] << endl;
+//   }
   return 0;
 }
